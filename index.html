@@ -2,111 +2,101 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Pirates de l’Asphalte | Asphaltage au Québec</title>
+  <title>Asphalte Québec | Services d’asphaltage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Pirates de l’Asphalte – Compagnie d’asphaltage résidentiel et commercial au Québec. Soumission rapide : 514-979-7832.">
+  <meta name="description" content="Asphalte Québec – Services d’asphaltage résidentiel et commercial au Québec. Information claire, service fiable.">
 
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #0b0b0b;
-      color: #f1f1f1;
-      line-height: 1.6;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1f1f1f;
+      color: #e6e6e6;
+      line-height: 1.7;
     }
 
     header {
-      background: linear-gradient(180deg, #000 0%, #121212 100%);
-      padding: 90px 20px;
-      text-align: center;
+      background-color: #2a2a2a;
+      border-bottom: 4px solid #4a4a4a;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
     }
 
     header h1 {
-      font-size: 3.2rem;
-      color: #f7931e;
-      margin-bottom: 15px;
-      letter-spacing: 2px;
+      margin: 0;
+      font-size: 2rem;
+      font-weight: normal;
     }
 
-    header p {
-      font-size: 1.25rem;
-      max-width: 800px;
-      margin: 0 auto 35px;
-      color: #ddd;
+    nav {
+      margin-top: 15px;
     }
 
-    .cta {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 40px;
-      background-color: #f7931e;
-      color: #000;
+    nav a {
+      color: #e6e6e6;
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 4px;
-      transition: background 0.3s;
+      margin-right: 20px;
+      font-size: 0.95rem;
     }
 
-    .cta:hover {
-      background-color: #ffb347;
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #262626;
+      padding: 50px 20px;
+    }
+
+    .hero h2 {
+      font-size: 1.8rem;
+      font-weight: normal;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 800px;
+    }
+
+    .contact-box {
+      margin-top: 25px;
+      background-color: #333;
+      padding: 20px;
+      border-left: 4px solid #6b6b6b;
     }
 
     section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 70px 20px;
+      padding: 50px 20px;
+      border-bottom: 1px solid #333;
     }
 
-    h2 {
-      text-align: center;
-      color: #f7931e;
-      font-size: 2.2rem;
-      margin-bottom: 40px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .service {
-      background: #141414;
-      padding: 30px;
-      border-radius: 6px;
-      border: 1px solid #222;
-    }
-
-    .service h3 {
-      color: #f7931e;
+    h3 {
+      font-weight: normal;
+      font-size: 1.4rem;
       margin-bottom: 15px;
     }
 
-    .contact {
-      background: #111;
-      border-top: 1px solid #222;
-      border-bottom: 1px solid #222;
-      text-align: center;
-    }
-
-    .contact p {
-      font-size: 1.15rem;
-      margin: 10px 0;
-    }
-
-    .contact a {
-      color: #f7931e;
-      text-decoration: none;
-      font-weight: bold;
+    ul {
+      padding-left: 20px;
     }
 
     footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9rem;
+      background-color: #2a2a2a;
       color: #aaa;
-      background: #0f0f0f;
+      font-size: 0.85rem;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    a {
+      color: #9ecbff;
     }
   </style>
 </head>
@@ -114,58 +104,60 @@
 <body>
 
 <header>
-  <!-- LOGO ICI PLUS TARD -->
-  <!-- <img src="logo.png" alt="Pirates de l’Asphalte" width="220"> -->
+  <div class="container">
+    <h1>Asphalte Québec</h1>
 
-  <h1>Pirates de l’Asphalte</h1>
-  <p>
-    Compagnie d’asphaltage résidentiel et commercial au Québec.  
-    Travail solide, durable et exécuté selon les règles de l’art.
-  </p>
-
-  <a class="cta" href="tel:15149797832">📞 514-979-7832</a>
-  <a class="cta" href="mailto:asphaltequebec@hotmail.ca">✉️ Courriel</a>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
 </header>
 
+<div class="hero">
+  <div class="container">
+    <h2>Services d’asphaltage au Québec</h2>
+    <p>
+      Asphalte Québec offre des services d’asphaltage résidentiel et commercial.
+      Notre approche est simple : information claire, travail conforme et résultats durables.
+    </p>
+
+    <div class="contact-box">
+      <strong>Nous joindre</strong><br>
+      Téléphone : <a href="tel:15149797832">514-979-7832</a><br>
+      Courriel : <a href="mailto:asphaltequebec@hotmail.ca">asphaltequebec@hotmail.ca</a>
+    </div>
+  </div>
+</div>
+
 <section>
-  <h2>Nos services</h2>
-
-  <div class="services">
-    <div class="service">
-      <h3>Asphaltage résidentiel</h3>
-      <p>
-        Entrées de cour, réparations et resurfaçage pour propriétés
-        résidentielles. Résultat propre et durable.
-      </p>
-    </div>
-
-    <div class="service">
-      <h3>Asphaltage commercial</h3>
-      <p>
-        Stationnements, immeubles commerciaux, cours industrielles
-        et projets de grande superficie.
-      </p>
-    </div>
-
-    <div class="service">
-      <h3>Réparation et entretien</h3>
-      <p>
-        Fissures, nids-de-poule, scellant et entretien préventif
-        pour prolonger la durée de vie de l’asphalte.
-      </p>
-    </div>
+  <div class="container">
+    <h3>Nos services</h3>
+    <ul>
+      <li>Asphaltage résidentiel (entrées de cour)</li>
+      <li>Asphaltage commercial et institutionnel</li>
+      <li>Réparations, fissures et resurfaçage</li>
+      <li>Entretien et prolongation de la durée de vie de l’asphalte</li>
+    </ul>
   </div>
 </section>
 
-<section class="contact">
-  <h2>Contact & soumission</h2>
-  <p>📞 Téléphone : <a href="tel:15149797832">514-979-7832</a></p>
-  <p>✉️ Courriel : <a href="mailto:asphaltequebec@hotmail.ca">asphaltequebec@hotmail.ca</a></p>
+<section>
+  <div class="container">
+    <h3>Approche et engagement</h3>
+    <p>
+      Nous privilégions une approche structurée, conforme aux bonnes pratiques de l’industrie.
+      Chaque projet est réalisé avec rigueur, dans le respect des normes et des échéanciers.
+    </p>
+  </div>
 </section>
 
 <footer>
-  © 2026 Pirates de l’Asphalte – Asphalte Québec<br>
-  Tous droits réservés
+  <div class="container">
+    <p>© 2026 Asphalte Québec</p>
+    <p>Services d’asphaltage résidentiel et commercial</p>
+  </div>
 </footer>
 
 </body>
