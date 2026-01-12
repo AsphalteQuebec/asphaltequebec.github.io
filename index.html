@@ -4,20 +4,24 @@
   <meta charset="UTF-8">
   <title>Asphalte Québec | Services d’asphaltage et déneigement</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta name="description" content="Asphalte Québec – Asphaltage, réparations, entretien et déneigement. Services résidentiels et commerciaux au Québec.">
 
+  <!-- Font Awesome pour icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-hXK6gnI5kPi5W4x+X9+6qYfUVynT70rVZ8j1zJr9qD1Bb+2Ee/+iYgk8xG2Hg/tk+V/KFqZwWcJShS5i+0xw7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
+    /* --- Body --- */
     body {
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #1e1e1e;
       color: #eaeaea;
       line-height: 1.7;
+      background: linear-gradient(160deg, #1e1e1e, #2c2c2c);
     }
 
+    /* --- Header --- */
     header {
-      background: #111;
+      background: linear-gradient(90deg, #111, #222);
       border-bottom: 4px solid #444;
     }
 
@@ -25,6 +29,8 @@
       max-width: 1150px;
       margin: auto;
       padding: 30px 20px;
+      position: relative;
+      z-index: 2;
     }
 
     header h1 {
@@ -43,32 +49,42 @@
       text-decoration: none;
       margin-right: 20px;
       font-size: 0.95rem;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
+      color: #f7931e;
       text-decoration: underline;
     }
 
+    /* --- Hero Section --- */
     .hero {
-      background-color: #252525;
-      padding: 60px 20px;
+      background: linear-gradient(135deg, #252525, #3b3b3b);
+      padding: 80px 20px;
+      text-align: center;
     }
 
     .hero h2 {
-      font-size: 1.9rem;
+      font-size: 2rem;
       font-weight: normal;
       margin-bottom: 15px;
+      color: #f7931e;
     }
 
     .hero p {
       max-width: 850px;
+      margin: auto;
+      font-size: 1rem;
+      color: #eaeaea;
     }
 
+    /* --- Contact Box --- */
     .contact-box {
       margin-top: 30px;
-      background-color: #333;
+      background: linear-gradient(120deg, #333, #444);
       padding: 25px;
       border-left: 5px solid #f7931e;
+      border-radius: 8px;
     }
 
     .contact-box a {
@@ -77,9 +93,31 @@
       text-decoration: none;
     }
 
+    .contact-box i {
+      color: #f7931e;
+      margin-right: 8px;
+    }
+
+    /* --- Sections --- */
     section {
       padding: 60px 20px;
       border-bottom: 1px solid #333;
+      color: #eaeaea;
+      background: linear-gradient(135deg, #1f1f1f, #2e2e2e);
+    }
+
+    /* Dégradés spécifiques par section */
+    #asphaltage {
+      background: linear-gradient(135deg, #2a2a2a, #1f1f1f);
+    }
+
+    #reparation {
+      background: linear-gradient(135deg, #2c2c2c, #3d3d3d);
+    }
+
+    #deneigement {
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      color: #111;
     }
 
     h3 {
@@ -93,16 +131,23 @@
       padding-left: 20px;
     }
 
+    /* --- Footer --- */
     footer {
-      background: #111;
+      background: linear-gradient(90deg, #111, #222);
       color: #aaa;
       font-size: 0.85rem;
+      padding: 30px 20px;
     }
 
     footer a {
       color: #9ecbff;
       text-decoration: none;
     }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 
@@ -133,11 +178,10 @@
 
     <div class="contact-box" id="contact">
       <strong>Nous joindre</strong><br><br>
-      📞 Téléphone : <a href="tel:15149797832">514-979-7832</a><br>
-      ✉️ Courriel : <a href="mailto:asphaltequebec@hotmail.ca">asphaltequebec@hotmail.ca</a><br>
-      📘 Facebook : <a href="https://www.facebook.com/piratesdelsphalte/" target="_blank">
-        Pirates de l’Asphalte
-      </a>
+      <i class="fas fa-phone"></i> Téléphone : <a href="tel:15149797832">514-979-7832</a><br>
+      <i class="fas fa-envelope"></i> Courriel : <a href="mailto:asphaltequebec@hotmail.ca">asphaltequebec@hotmail.ca</a><br>
+      <i class="fab fa-facebook-square"></i> Facebook : 
+      <a href="https://www.facebook.com/piratesdelsphalte/" target="_blank">Pirates de l’Asphalte</a>
     </div>
   </div>
 </div>
