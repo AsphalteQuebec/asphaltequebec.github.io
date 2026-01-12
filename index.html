@@ -6,49 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Asphalte Québec – Asphaltage, réparations, entretien et déneigement. Services résidentiels et commerciaux au Québec.">
 
-  <!-- Font Awesome pour icônes -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-hXK6gnI5kPi5W4x+X9+6qYfUVynT70rVZ8j1zJr9qD1Bb+2Ee/+iYgk8xG2Hg/tk+V/KFqZwWcJShS5i+0xw7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
-    /* --- Body --- */
-    body {
+    /* --- Reset & Body --- */
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: "Segoe UI", Arial, sans-serif;
-      color: #eaeaea;
       line-height: 1.7;
+      color: #eaeaea;
       background: linear-gradient(160deg, #1e1e1e, #2c2c2c);
     }
 
     /* --- Header --- */
     header {
       background: linear-gradient(90deg, #111, #222);
-      border-bottom: 4px solid #444;
+      border-bottom: 4px solid #f7931e;
+      padding: 20px 0;
     }
 
     .container {
       max-width: 1150px;
       margin: auto;
-      padding: 30px 20px;
-      position: relative;
-      z-index: 2;
+      padding: 0 20px;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.4rem;
+      font-size: 2.6rem;
       color: #f7931e;
       letter-spacing: 1px;
     }
 
     nav {
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     nav a {
       color: #eaeaea;
       text-decoration: none;
       margin-right: 20px;
-      font-size: 0.95rem;
+      font-size: 1rem;
       transition: color 0.3s ease;
     }
 
@@ -59,54 +62,62 @@
 
     /* --- Hero Section --- */
     .hero {
-      background: linear-gradient(135deg, #252525, #3b3b3b);
-      padding: 80px 20px;
+      background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+      padding: 100px 20px 80px 20px;
       text-align: center;
     }
 
     .hero h2 {
-      font-size: 2rem;
-      font-weight: normal;
-      margin-bottom: 15px;
+      font-size: 2.4rem;
       color: #f7931e;
+      margin-bottom: 20px;
     }
 
     .hero p {
       max-width: 850px;
       margin: auto;
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #eaeaea;
     }
 
     /* --- Contact Box --- */
     .contact-box {
-      margin-top: 30px;
+      margin-top: 40px;
       background: linear-gradient(120deg, #333, #444);
-      padding: 25px;
+      padding: 30px;
       border-left: 5px solid #f7931e;
-      border-radius: 8px;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
     }
 
     .contact-box a {
       color: #f7931e;
       font-weight: bold;
       text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-box a:hover {
+      color: #ffd580;
     }
 
     .contact-box i {
       color: #f7931e;
-      margin-right: 8px;
+      margin-right: 10px;
+      min-width: 20px;
+      text-align: center;
     }
 
     /* --- Sections --- */
     section {
-      padding: 60px 20px;
+      padding: 80px 20px;
       border-bottom: 1px solid #333;
       color: #eaeaea;
       background: linear-gradient(135deg, #1f1f1f, #2e2e2e);
+      transition: background 0.5s ease;
     }
 
-    /* Dégradés spécifiques par section */
     #asphaltage {
       background: linear-gradient(135deg, #2a2a2a, #1f1f1f);
     }
@@ -121,31 +132,54 @@
     }
 
     h3 {
-      font-size: 1.6rem;
-      font-weight: normal;
+      font-size: 1.8rem;
       color: #f7931e;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     ul {
-      padding-left: 20px;
+      padding-left: 25px;
+      font-size: 1.05rem;
+    }
+
+    ul li {
+      margin-bottom: 10px;
     }
 
     /* --- Footer --- */
     footer {
       background: linear-gradient(90deg, #111, #222);
       color: #aaa;
-      font-size: 0.85rem;
-      padding: 30px 20px;
+      font-size: 0.9rem;
+      padding: 40px 20px;
+      text-align: center;
     }
 
     footer a {
       color: #9ecbff;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
 
     footer a:hover {
-      text-decoration: underline;
+      color: #66b0ff;
+    }
+
+    /* --- Boutons et liens --- */
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background-color: #f7931e;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #ffae42;
     }
 
   </style>
