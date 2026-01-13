@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <!-- Mets l’URL finale quand ton site est en ligne -->
   <meta property="og:url" content="https://exemple.com/" />
-  <!-- Optionnel: ajoute une vraie image 1200x630 -->
+  <!-- Mets une image 1200x630 quand tu l'as -->
   <!-- <meta property="og:image" content="https://exemple.com/og-asphalte.jpg" /> -->
 
   <!-- Twitter (optionnel) -->
@@ -77,14 +77,28 @@
       padding: 14px 0;
     }
 
-    header h1 {
+    /* ✅ Brand (logo + titre) */
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .brand-logo {
+      width: 64px;
+      height: 48px;
+      object-fit: contain;
+      display: block;
+      flex: 0 0 auto;
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,0.35));
+    }
+    .brand-title {
       font-size: 1.8rem;
       color: var(--accent);
       letter-spacing: 0.5px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      white-space: nowrap;
+      font-weight: 800;
+      line-height: 1;
     }
 
     .badge {
@@ -131,6 +145,8 @@
       nav.open { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
       .menu-btn { display: inline-flex; align-items: center; gap: 10px; }
       .topbar { align-items: flex-start; }
+      .brand-title { font-size: 1.55rem; }
+      .brand-logo { width: 56px; height: 42px; }
     }
 
     /* Hero */
@@ -439,7 +455,12 @@
   <div class="container">
     <div class="topbar">
       <div style="display:flex; align-items:center; gap:10px;">
-        <h1><i class="fa-solid fa-road" aria-hidden="true"></i> Asphalte Québec</h1>
+        <!-- ✅ Logo SVG + Titre (remplace l'icône fa-road) -->
+        <a class="brand" href="#top" aria-label="Retour à l’accueil">
+          <img class="brand-logo" src="assets/logo-asphalte-quebec.svg" alt="Asphalte Québec" width="64" height="48">
+          <span class="brand-title">Asphalte Québec</span>
+        </a>
+
         <span class="badge">Résidentiel + Commercial</span>
       </div>
 
